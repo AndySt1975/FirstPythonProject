@@ -1,0 +1,30 @@
+Pillow
+Python Imaging Library (Fork)
+Pillow is the friendly PIL fork by Alex Clark and Contributors. PIL is the Python Imaging Library by Fredrik Lundh and Contributors
+
+https://pillow.readthedocs.io/en/latest/handbook/tutorial.html
+
+ try typing this in the command prompt ... or if you use VS Code like me (my pycharm throws errors whenever I use walrus operators, but code still runs perfectly; outdated pycharm version I guess), type this in the VS Code terminal... (or pycharm terminal if it will work)
+"python -m pip install --upgrade pip" (exclude quotation marks) followed by
+"python -m pip install --upgrade Pillow" (exclude quotation marks)
+
+afterwards import these in your python file like so...
+from PIL import Image
+from PIL import ImageTk as itk  
+
+and for resize do this...
+image = Image.open("FILEPATH") 
+# image.resize((INTVALUE, INTVALUE)) # this also works but creates stretched images
+image.thumbnail((50, 50)) # replace 50, 50 with whatever integer value you like but keep the double parenthesis
+finalImage = PhotoImage(image)
+
+hope this helps ;)
+
+
+
+
+vor 11 Monaten
+ @James Orpilla  actually pycharm can install it for you!
+go to file--> setting--> project --> python interpreter 
+and click on the + button and search for PIL and click install.
+then you can import

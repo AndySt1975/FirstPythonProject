@@ -1,0 +1,4 @@
+Das ist nur ein Textdokument
+in dem ich Text schreibe, den ich
+gleich mit hilfe von Python auslese
+und verändere - oh oh

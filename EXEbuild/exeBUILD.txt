@@ -1,0 +1,18 @@
+(Windows Defender may prevent you from running)
+(make sure pip and pyinstaller are installed/updated)
+
+1. cd to directory that contains your .py file
+
+2. pyinstaller -F -w -i icon.ico clock.py
+
+  -F   (all in 1 file)
+  -w   (removes terminal window)
+  -i icon.ico  (adds custom icon to .exe)
+  clock.py  (name of your main python file)
+
+3. exe is located in the dist folder
+
+
+image files has to be modified in .py and in the build-process
+look here https://stackoverflow.com/questions/31836104/pyinstaller-and-onefile-how-to-include-an-image-in-the-exe-file
+bro code is too hashiwashi not a pro really.....

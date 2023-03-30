@@ -1,0 +1,5 @@
+Andy schreibt ein Textdokument via Python
+Das ist cool\I´m greatund so schreibe ich eine log datei
+ nd so schreibe ich eine log datei
+ nd so schreibe ich eine log datei
+und so schreibe ich eine log datei
