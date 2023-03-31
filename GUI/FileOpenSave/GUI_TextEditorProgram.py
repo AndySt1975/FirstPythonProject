@@ -11,6 +11,7 @@ from tkinter.filedialog import *
 def change_color():
     color = colorchooser.askcolor(title="pick a color...or else")
     text_area.config(fg=color[1])
+    print(color)
 
 
 def change_font(*args):
@@ -102,6 +103,7 @@ x = int((screen_width / 2) - (window_width / 2))
 y = int((screen_height / 2) - (window_height / 2))
 
 window.geometry("{}x{}+{}+{}".format(window_width, window_height, x, y))
+window.config(background='#242424')#thats the bottom line (where the buttons are placed)
 
 font_name = StringVar(window)
 font_name.set("Arial")
@@ -110,8 +112,9 @@ font_size = StringVar(window)
 font_size.set("25")
 
 text_area = Text(window, font=(font_name.get(), font_size.get()))
+text_area.config(fg=("#00ff00"),background="black",insertbackground='grey')
 
-scroll_bar = Scrollbar(text_area)
+scroll_bar = Scrollbar(text_area,command=text_area.yview)
 window.grid_rowconfigure(0, weight=1)
 window.grid_columnconfigure(0, weight=1)
 text_area.grid(sticky=N + E + S + W)
